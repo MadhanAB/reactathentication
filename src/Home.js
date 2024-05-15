@@ -9,7 +9,7 @@ const Home = () => {
 
     const getusers = async () => {
       try {
-        const response = await axios.get("http://localhost:5001/api/v1/Myprofile");
+        const response = await axios.get("https://loginserverauthentication.onrender.com/api/v1/Myprofile");
        // console.log(response);
          setuserdata(response.data.data);
       } catch (error) {
